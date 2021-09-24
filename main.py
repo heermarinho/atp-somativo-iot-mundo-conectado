@@ -12,9 +12,6 @@ def mensagem(client, userdata, msg):
   client.publish('v1/{}/things/{}/response'.format(user,client_id),
   f'ok,{vetor[0]}')
   
-
-
-
 client = mqtt.Client(client_id)
 client.username_pw_set(user,password)
 client.connect(server,port)
